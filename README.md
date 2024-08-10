@@ -1,6 +1,6 @@
 # shop_app
 
-A new Flutter Learning project project.
+A new Flutter Learning  project.
 
 
 ## Getting Started
