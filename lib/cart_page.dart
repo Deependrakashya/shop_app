@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:shop_app/card_provider.dart';
 
 import 'package:provider/provider.dart';
-=======
-import 'package:shop_app/global_variable.dart';
->>>>>>> b698d17 ( Bottom Navigation created)
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
     final data = (Provider.of<CardProvider>(context).cart);
     return Scaffold(
       appBar: AppBar(
@@ -63,28 +58,3 @@ showDialog(context: context, builder: (context){
     );
   }
 }
-=======
-    return  Scaffold(
-      appBar: AppBar(
-        title: Center(child: Text('Cart')),
-      ),
-      body: ListView.builder(
-        itemCount: cart.length,
-        
-        itemBuilder:   (context, index){
-          final cartData = cart[index];
-        return ListTile(
-          leading: CircleAvatar(child: Image(image: AssetImage(
-            cartData['imageUrl'] as String
-          ))
-          ,),
-          title: Text('${cartData['title']} ${cartData['company']}', style: Theme.of(context).textTheme.titleMedium, ),
-          subtitle: Text('Size : ${cartData['size']}'),
-          trailing:   IconButton(onPressed:(){} , icon: Icon(Icons.delete, color: Colors.red,),),
-        );
-
-      }),
-    );
-  }
-}
->>>>>>> b698d17 ( Bottom Navigation created)

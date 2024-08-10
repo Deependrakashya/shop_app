@@ -11,11 +11,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-<<<<<<< HEAD
   List<Widget> page = [const ProductList(), const CartPage()];
-=======
-  List<Widget> page = [ProductList(), CartPage()];
->>>>>>> b698d17 ( Bottom Navigation created)
   int currentPage = 0;
   @override
   Widget build(BuildContext context) {
